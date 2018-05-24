@@ -15,6 +15,12 @@
 		475BC61C209C336E00E9E924 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 475BC61B209C336E00E9E924 /* main.m */; };
 		475BC626209C336F00E9E924 /* HCRuntimeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 475BC625209C336F00E9E924 /* HCRuntimeTests.m */; };
 		475BC631209C336F00E9E924 /* HCRuntimeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 475BC630209C336F00E9E924 /* HCRuntimeUITests.m */; };
+		475BC641209C33C200E9E924 /* UIButton+HCAction.m in Sources */ = {isa = PBXBuildFile; fileRef = 475BC640209C33C200E9E924 /* UIButton+HCAction.m */; };
+		47635A2A20B68F76008527A6 /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 47635A2920B68F76008527A6 /* Animal.m */; };
+		47635A2D20B68F9F008527A6 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 47635A2C20B68F9F008527A6 /* Person.m */; };
+		47635A3020B699E5008527A6 /* Message.m in Sources */ = {isa = PBXBuildFile; fileRef = 47635A2F20B699E5008527A6 /* Message.m */; };
+		47635A3320B69FAE008527A6 /* Target.m in Sources */ = {isa = PBXBuildFile; fileRef = 47635A3220B69FAE008527A6 /* Target.m */; };
+		47635A3620B6AA59008527A6 /* NSObject+Associate.m in Sources */ = {isa = PBXBuildFile; fileRef = 47635A3520B6AA59008527A6 /* NSObject+Associate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,18 @@
 		475BC62C209C336F00E9E924 /* HCRuntimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HCRuntimeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		475BC630209C336F00E9E924 /* HCRuntimeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HCRuntimeUITests.m; sourceTree = "<group>"; };
 		475BC632209C336F00E9E924 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		475BC63F209C33C200E9E924 /* UIButton+HCAction.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+HCAction.h"; sourceTree = "<group>"; };
+		475BC640209C33C200E9E924 /* UIButton+HCAction.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+HCAction.m"; sourceTree = "<group>"; };
+		47635A2820B68F76008527A6 /* Animal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
+		47635A2920B68F76008527A6 /* Animal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
+		47635A2B20B68F9F008527A6 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		47635A2C20B68F9F008527A6 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		47635A2E20B699E5008527A6 /* Message.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Message.h; sourceTree = "<group>"; };
+		47635A2F20B699E5008527A6 /* Message.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Message.m; sourceTree = "<group>"; };
+		47635A3120B69FAE008527A6 /* Target.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Target.h; sourceTree = "<group>"; };
+		47635A3220B69FAE008527A6 /* Target.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Target.m; sourceTree = "<group>"; };
+		47635A3420B6AA59008527A6 /* NSObject+Associate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Associate.h"; sourceTree = "<group>"; };
+		47635A3520B6AA59008527A6 /* NSObject+Associate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Associate.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +119,8 @@
 		475BC60B209C336E00E9E924 /* HCRuntime */ = {
 			isa = PBXGroup;
 			children = (
+				47635A2720B68ED1008527A6 /* Model */,
+				475BC63E209C339100E9E924 /* Category */,
 				475BC60C209C336E00E9E924 /* AppDelegate.h */,
 				475BC60D209C336E00E9E924 /* AppDelegate.m */,
 				475BC60F209C336E00E9E924 /* ViewController.h */,
@@ -130,6 +150,32 @@
 				475BC632209C336F00E9E924 /* Info.plist */,
 			);
 			path = HCRuntimeUITests;
+			sourceTree = "<group>";
+		};
+		475BC63E209C339100E9E924 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				475BC63F209C33C200E9E924 /* UIButton+HCAction.h */,
+				475BC640209C33C200E9E924 /* UIButton+HCAction.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		47635A2720B68ED1008527A6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				47635A2820B68F76008527A6 /* Animal.h */,
+				47635A2920B68F76008527A6 /* Animal.m */,
+				47635A2B20B68F9F008527A6 /* Person.h */,
+				47635A2C20B68F9F008527A6 /* Person.m */,
+				47635A2E20B699E5008527A6 /* Message.h */,
+				47635A2F20B699E5008527A6 /* Message.m */,
+				47635A3120B69FAE008527A6 /* Target.h */,
+				47635A3220B69FAE008527A6 /* Target.m */,
+				47635A3420B6AA59008527A6 /* NSObject+Associate.h */,
+				47635A3520B6AA59008527A6 /* NSObject+Associate.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,7 +311,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47635A2D20B68F9F008527A6 /* Person.m in Sources */,
+				475BC641209C33C200E9E924 /* UIButton+HCAction.m in Sources */,
+				47635A3320B69FAE008527A6 /* Target.m in Sources */,
+				47635A3620B6AA59008527A6 /* NSObject+Associate.m in Sources */,
 				475BC611209C336E00E9E924 /* ViewController.m in Sources */,
+				47635A3020B699E5008527A6 /* Message.m in Sources */,
+				47635A2A20B68F76008527A6 /* Animal.m in Sources */,
 				475BC61C209C336E00E9E924 /* main.m in Sources */,
 				475BC60E209C336E00E9E924 /* AppDelegate.m in Sources */,
 			);
